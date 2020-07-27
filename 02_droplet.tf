@@ -7,5 +7,5 @@ resource "digitalocean_droplet" "web" {
   region    = "nyc1"
   size      = "s-1vcpu-1gb"
   user_data = "${file("userdata.yaml")}"
-  ssh_keys  = digitalocean_ssh_key.do_deployer.name.fingerprint 
+  ssh_keys  = digitalocean_ssh_key.do_deployer.name 
 }
