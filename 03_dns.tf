@@ -9,7 +9,7 @@ resource "digitalocean_record" "www" {
   domain = "${digitalocean_domain.delyqueso.name}"
   type   = "A"
   name   = "delyqueso"
-  ttl    = "10"
+  ttl    = "40"
   value  = "${digitalocean_droplet.web.ipv4_address}"
 }
 
